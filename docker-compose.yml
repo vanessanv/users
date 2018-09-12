@@ -20,7 +20,7 @@ services:
     volumes:
       - C:/db:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 3306
     container_name: pathDb
     networks:
       - production-network
