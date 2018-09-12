@@ -13,6 +13,7 @@ PUT:
 /update - Atualiza um usuário existente. 
 Ex.:
 "/users/update"
+
 {
 "id" : "1",
 "name" : "Teste",
