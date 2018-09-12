@@ -1,0 +1,55 @@
+version: '3'
+services:
+  nginx:
+    image: vanessanv/nginx
+    container_name: nginx
+    ports:
+        - "8080:80"
+    networks: 
+        - production-network
+    depends_on: 
+        - "web_1"
+        - "web_2"
+        - "web_3"
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=user
+      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - C:/db:/var/lib/mysql
+    ports:
+      - 3306:3306
+    container_name: pathDb
+    networks:
+      - production-network
+  
+  web_1:
+    image: vanessanv/spring_boot_mysql
+    ports:
+      - 8080
+    depends_on:
+      - "db"
+    networks:
+      - production-network
+  web_2:
+    image: vanessanv/spring_boot_mysql
+    ports:
+      - 8080
+    depends_on:
+      - "db"
+    networks:
+      - production-network
+  web_3:
+    image: vanessanv/spring_boot_mysql
+    ports:
+      - 8080
+    depends_on:
+      - "db"
+    networks:
+      - production-network
+
+networks:
+  production-network:
+    driver: bridge

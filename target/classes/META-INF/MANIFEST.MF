@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: user
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Bruno Cruz
+Implementation-Vendor-Id: br.com.user
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/user
+Created-By: Maven Integration for Eclipse
+
