@@ -1,7 +1,7 @@
 # User
 
 Programa escrito para teste.
-Nele foram utilizadas as seguintes tecnologias: Java 1.8, SpringBoot, Rest, JUNIT, MockMvc, Dockere NGINX.
+Nele foram utilizadas as seguintes tecnologias: Java 1.8, SpringBoot, Rest, JUNIT, MockMvc, Docker e NGINX.
 
 ## Getting Started
 
