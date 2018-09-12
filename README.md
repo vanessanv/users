@@ -6,6 +6,8 @@ Nele foram utilizadas as seguintes tecnologias: Java 1.8, SpringBoot, Rest, JUNI
 ## Getting Started
 
 A API REST do projeto possui o endpoint "/users"  e os seguintes métodos:
+
+
 GET:
 /find/{id} - Retorna o usuário indicado pelo id passado. Ex.:"/users/find/1"
 
@@ -23,6 +25,7 @@ Ex.:
 
 POST:
 /add - Adiciona um usuário.
+
 Ex.:
 "/users/add"
 {
@@ -33,7 +36,8 @@ Ex.:
 }
 
 DELETE:
-/delete/{id} - Remove um usuário
+/delete/{id} - Remove um usuário.
+
 Ex.: 
 "/delete/1"
 {
